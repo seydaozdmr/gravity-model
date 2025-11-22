@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Interactive Solar System</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="canvas-container"></div>
+
+  <div class="instruction">
+    Click on a planet to see details. Drag to rotate, scroll to zoom.
+  </div>
+
+  <div id="info-card">
+    <button id="close-btn">&times;</button>
+    <h2 id="planet-name">Planet Name</h2>
+    <p id="planet-desc">Description goes here.</p>
+    <p><strong>Distance:</strong> <span id="planet-dist">0</span> million km</p>
+  </div>
+
+  <div id="controls">
+    <button id="pause-btn">Pause / Resume</button>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
